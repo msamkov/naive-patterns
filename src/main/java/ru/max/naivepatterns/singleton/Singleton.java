@@ -5,12 +5,10 @@ package ru.max.naivepatterns.singleton;
  * обеспечивает доступ к его единственному объекту.
  */
 public class Singleton {
-    private static Singleton instance = null;
+
+    private static final Singleton INSTANCE = new Singleton();
     private Singleton() {}
     public static Singleton getInstance() {
-        if (instance == null) {
-            instance = new Singleton();
-        }
-        return instance;
+        return INSTANCE;
     }
 }

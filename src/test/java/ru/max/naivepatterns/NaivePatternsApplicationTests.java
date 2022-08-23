@@ -8,6 +8,7 @@ class NaivePatternsApplicationTests {
 
     @Test
     void contextLoads() {
+
     }
 
 }
