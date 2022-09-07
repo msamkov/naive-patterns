@@ -30,20 +30,27 @@ https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
 
 #### Behavioral Поведенческие
 * +Template Method (Шаблонный метод) - определяющий основу алгоритма и позволяющий наследникам переопределять некоторые шаги алгоритма, не изменяя его структуру в целом.
-* +Mediator (Посредник) - предоставляет класс посредника, который обрабатывает все коммуникации между различными классами.
+* +Mediator (Посредник) - предоставляет класс посредника, который обрабатывает все коммуникации между различными классами.  
   Examples in Java's core libraries:  
   java.util.Timer (all scheduleXXX() methods)  
   java.util.concurrent.Executor#execute()  
   java.util.concurrent.ExecutorService (the invokeXXX() and submit() methods)  
   java.util.concurrent.ScheduledExecutorService (all scheduleXXX() methods)  
   java.lang.reflect.Method#invoke()    
-
-* +Chain of Responsibility (Цепочка обязанностей) - позволяет избежать жесткой зависимости отправителя запроса от его получателя, при этом запрос может быть обработан несколькими объектами.
+  
+* +Chain of Responsibility (Цепочка обязанностей) - позволяет избежать жесткой зависимости отправителя запроса от его получателя, при этом запрос может быть обработан несколькими объектами.  
   Examples in Java's core libraries:  
   java.util.logging.Logger#log()  
   javax.servlet.Filter#doFilter()  
 
-* Observer (Наблюдатель) - позволяет одним обьектам следить и реагировать на события, происходящие в других объектах.
+* +Observer (or Publish/Subscribe) (Наблюдатель) - позволяет одним обьектам следить и реагировать на события, происходящие в других объектах.  
+  Examples in Java's core libraries:  
+  java.util.Observer/java.util.Observable (rarely used in real world though)  
+  All implementations of java.util.EventListener (practically all over Swing thus)  
+  javax.servlet.http.HttpSessionBindingListener  
+  javax.servlet.http.HttpSessionAttributeListener  
+  javax.faces.event.PhaseListener  
+
 * Strategy (Стратегия) - алгоритм стратегии может быть изменен во время выполнения программы.
 * Command (Команда) - интерфейс команды объявляет метод для выполнения определенного действия.
 * State (Состояние) - объект может изменять свое поведение в зависимости от его состояния.
