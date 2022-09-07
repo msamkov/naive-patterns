@@ -30,7 +30,7 @@ https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
 
 #### Behavioral Поведенческие
 * +Template Method (Шаблонный метод) - определяющий основу алгоритма и позволяющий наследникам переопределять некоторые шаги алгоритма, не изменяя его структуру в целом.
-* Mediator (Посредник) - предоставляет класс посредника, который обрабатывает все коммуникации между различными классами.
+* +Mediator (Посредник) - предоставляет класс посредника, который обрабатывает все коммуникации между различными классами.
   Examples in Java's core libraries:  
   java.util.Timer (all scheduleXXX() methods)  
   java.util.concurrent.Executor#execute()  
@@ -38,8 +38,11 @@ https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
   java.util.concurrent.ScheduledExecutorService (all scheduleXXX() methods)  
   java.lang.reflect.Method#invoke()    
 
+* +Chain of Responsibility (Цепочка обязанностей) - позволяет избежать жесткой зависимости отправителя запроса от его получателя, при этом запрос может быть обработан несколькими объектами.
+  Examples in Java's core libraries:  
+  java.util.logging.Logger#log()  
+  javax.servlet.Filter#doFilter()  
 
-* Chain of Responsibility (Цепочка обязанностей) - позволяет избежать жесткой зависимости отправителя запроса от его получателя, при этом запрос может быть обработан несколькими объектами.
 * Observer (Наблюдатель) - позволяет одним обьектам следить и реагировать на события, происходящие в других объектах.
 * Strategy (Стратегия) - алгоритм стратегии может быть изменен во время выполнения программы.
 * Command (Команда) - интерфейс команды объявляет метод для выполнения определенного действия.
