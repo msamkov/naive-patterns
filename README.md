@@ -51,7 +51,12 @@ https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
   javax.servlet.http.HttpSessionAttributeListener  
   javax.faces.event.PhaseListener  
 
-* Strategy (Стратегия) - алгоритм стратегии может быть изменен во время выполнения программы.
+* +Strategy (Стратегия) - алгоритм стратегии может быть изменен во время выполнения программы.  
+  Examples in Java's core libraries:  
+  java.util.Comparator#compare(), executed by among others Collections#sort().
+  
+  
+
 * Command (Команда) - интерфейс команды объявляет метод для выполнения определенного действия.
 * State (Состояние) - объект может изменять свое поведение в зависимости от его состояния.
 * Visitor (Посетитель) - используется для упрощения операций над группировками связанных объектов.
