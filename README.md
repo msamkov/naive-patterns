@@ -57,7 +57,12 @@ https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
   
   
 
-* Command (Команда) - интерфейс команды объявляет метод для выполнения определенного действия.
+* Command (Команда) - интерфейс команды объявляет метод для выполнения определенного действия.  
+  Examples in Java's core libraries:  
+  All implementations of java.lang.Runnable
+  All implementations of javax.swing.Action
+
+
 * State (Состояние) - объект может изменять свое поведение в зависимости от его состояния.
 * Visitor (Посетитель) - используется для упрощения операций над группировками связанных объектов.
 * Interpreter (Интерпретатор) - определяет грамматику простого языка для проблемной области.
