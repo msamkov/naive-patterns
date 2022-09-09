@@ -63,7 +63,10 @@ https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
   All implementations of javax.swing.Action
 
 
-* State (Состояние) - объект может изменять свое поведение в зависимости от его состояния.
+* State (Состояние) - объект может изменять свое поведение в зависимости от его состояния.  
+  Examples in Java's core libraries:  
+  javax.faces.lifecycle.LifeCycle#execute() (controlled by FacesServlet, the behaviour is dependent on current phase (state) of JSF lifecycle)
+
 * Visitor (Посетитель) - используется для упрощения операций над группировками связанных объектов.
 * Interpreter (Интерпретатор) - определяет грамматику простого языка для проблемной области.
 * Iterator (Итератор) - последовательно осуществляет доступ к элементам объекта коллекции, не зная его основного представления.
