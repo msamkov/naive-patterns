@@ -57,17 +57,26 @@ https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
   
   
 
-* Command (Команда) - интерфейс команды объявляет метод для выполнения определенного действия.  
+* +Command (Команда) - интерфейс команды объявляет метод для выполнения определенного действия.  
   Examples in Java's core libraries:  
   All implementations of java.lang.Runnable
   All implementations of javax.swing.Action
 
 
-* State (Состояние) - объект может изменять свое поведение в зависимости от его состояния.  
+* +State (Состояние) - объект может изменять свое поведение в зависимости от его состояния.  
   Examples in Java's core libraries:  
-  javax.faces.lifecycle.LifeCycle#execute() (controlled by FacesServlet, the behaviour is dependent on current phase (state) of JSF lifecycle)
+  javax.faces.lifecycle.LifeCycle#execute() (controlled by FacesServlet, the behaviour is dependent on current phase (state) of JSF lifecycle)  
+  
 
-* Visitor (Посетитель) - используется для упрощения операций над группировками связанных объектов.
+* +Visitor (Посетитель) - используется для упрощения операций над группировками связанных объектов.  
+  Examples in Java's core libraries:  
+  javax.lang.model.element.AnnotationValue and AnnotationValueVisitor  
+  javax.lang.model.element.Element and ElementVisitor  
+  javax.lang.model.type.TypeMirror and TypeVisitor  
+  java.nio.file.FileVisitor and SimpleFileVisitor  
+  javax.faces.component.visit.VisitContext and VisitCallback  
+  
+
 * Interpreter (Интерпретатор) - определяет грамматику простого языка для проблемной области.
 * Iterator (Итератор) - последовательно осуществляет доступ к элементам объекта коллекции, не зная его основного представления.
 * Memento (Хранитель) - используется для хранения состояния объекта, позже это состояние можно восстановить.
