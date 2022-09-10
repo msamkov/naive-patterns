@@ -86,4 +86,14 @@ https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
 
   
 * Iterator (Итератор) - последовательно осуществляет доступ к элементам объекта коллекции, не зная его основного представления.
+  Examples in Java's core libraries:  
+  All implementations of java.util.Iterator (thus among others also java.util.Scanner!).
+  All implementations of java.util.Enumeration
+  Чем различаются Enumeration и Iterator.
+  Хотя оба интерфейса и предназначены для обхода коллекций между ними имеются существенные различия:
+с помощью Enumeration нельзя добавлять/удалять элементы;
+в Iterator исправлены имена методов для повышения читаемости кода (Enumeration.hasMoreElements() соответствует Iterator.hasNext(), Enumeration.nextElement() соответствует Iterator.next() и т.д);
+Enumeration присутствуют в устаревших классах, таких как Vector/Stack, тогда как Iterator есть во всех современных классах-коллекциях.
+  
+
 * Memento (Хранитель) - используется для хранения состояния объекта, позже это состояние можно восстановить.
