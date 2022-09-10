@@ -85,7 +85,7 @@ https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
   All subclasses of javax.el.ELResolver
 
   
-* Iterator (Итератор) - последовательно осуществляет доступ к элементам объекта коллекции, не зная его основного представления.
+* +Iterator (Итератор) - последовательно осуществляет доступ к элементам объекта коллекции, не зная его основного представления.
   Examples in Java's core libraries:  
   All implementations of java.util.Iterator (thus among others also java.util.Scanner!).
   All implementations of java.util.Enumeration
@@ -96,4 +96,9 @@ https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
 Enumeration присутствуют в устаревших классах, таких как Vector/Stack, тогда как Iterator есть во всех современных классах-коллекциях.
   
 
-* Memento (Хранитель) - используется для хранения состояния объекта, позже это состояние можно восстановить.
+* +Memento (Хранитель) - используется для хранения состояния объекта, позже это состояние можно восстановить.  
+  Examples in Java's core libraries:  
+  java.util.Date (the setter methods do that, Date is internally represented by a long value)
+  All implementations of java.io.Serializable
+  All implementations of javax.faces.component.StateHolder
+ 
