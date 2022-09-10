@@ -77,6 +77,13 @@ https://springframework.guru/gang-of-four-design-patterns/decorator-pattern/
   javax.faces.component.visit.VisitContext and VisitCallback  
   
 
-* Interpreter (Интерпретатор) - определяет грамматику простого языка для проблемной области.
+* +Interpreter (Интерпретатор) - определяет грамматику простого языка для проблемной области.  
+  Examples in Java's core libraries:  
+  java.util.Pattern
+  java.text.Normalizer
+  All subclasses of java.text.Format
+  All subclasses of javax.el.ELResolver
+
+  
 * Iterator (Итератор) - последовательно осуществляет доступ к элементам объекта коллекции, не зная его основного представления.
 * Memento (Хранитель) - используется для хранения состояния объекта, позже это состояние можно восстановить.
